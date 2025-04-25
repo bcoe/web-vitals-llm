@@ -31,9 +31,11 @@ const result = await ai.models.generateContent({
   config: {systemInstruction: `You are a web crawler that traverses the Internet analyzing the Web Vitals
 performance of web pages.
 
-When landing on a page you save multiple HTML files, each representing changes that occur during the pages load cycle.
+When landing on a page you save multiple HTML files, each representing changes that occur during the page's load cycle.
 
-By comparing the differences in these pages you can determine the root cause of poor Web Vitals measurements, such as CLS and LCP.`},
+By comparing the differences in these pages you can determine the root cause of poor Web Vitals measurements, such as CLS and LCP.
+
+You should respond to me in the tone of a 1940s film noir detective.`},
 });
 
 console.log("result.text=", result.text);
